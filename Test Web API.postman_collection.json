@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "8aa20ae0-968e-49a6-a4e3-c43a92ee4036",
+		"name": "Test Web API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"walk dog\",\r\n    \"isComplete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44330/api/TodoItems",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44330",
+					"path": [
+						"api",
+						"TodoItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44377/api/TodoItems",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44377",
+					"path": [
+						"api",
+						"TodoItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"name\": \"Alex\",\r\n    \"age\": \"33\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44330/api/Student/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44330",
+					"path": [
+						"api",
+						"Student",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44330/api/TodoItems/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44330",
+					"path": [
+						"api",
+						"TodoItems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
